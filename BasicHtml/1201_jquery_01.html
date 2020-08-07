@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang ="ko">
+    <head>
+        <title>jQuery example</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#input1").keydown(function(key){
+                    if(key.keyCode == 13){
+                        $("#input2").focus();
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="input1" type="text" maxlength="6"/>
+            <br/>
+            <input id="input2" type="text" maxlength="7"/>
+        </form>
+    </body>
+</html>

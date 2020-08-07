@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이벤트 예제</title>
+        <script>
+            window.onload = function()
+            {
+                var button = document.getElementById("button1");
+                button.onclick = function()
+                {
+                    alert("익명함수 콜");
+                }
+            };
+            function buttonClick()
+            {
+                alert("1231241423");
+            }
+        </script>
+    </head>
+    <body>
+        <input id="button1" type="button" value="입력"/>
+        <!-- <input type="button" value="입력" onclick="alert('클릭');"/> -->
+        <button onclick="alert('두번째');">두번째</button>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang ="ko">
+    <head>
+        <title>jQuery example</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                //01.selector
+                $("h1").css("color","rgb(255,255,255)");
+                $("h1").css("background-color","black");
+
+                //02.attr (js getAttribute)
+                var src = $("script").attr("src");
+                alert("jQuery link = " + src);
+
+                //03.attr set
+                var img = $("img");
+                img.css("width","320px");
+                img.css("heigth","200px");
+                img.attr("scr","http://placehold.it/320x200");
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Heading 1st</h1>
+        <h1>Heading 2nd</h1>
+        <h1>Heading 3rd</h1>
+
+        <img style="width: 30px; height: 20px;"/>
+        <img style="width: 30px; height: 20px;"/>
+    </body>
+</html>
