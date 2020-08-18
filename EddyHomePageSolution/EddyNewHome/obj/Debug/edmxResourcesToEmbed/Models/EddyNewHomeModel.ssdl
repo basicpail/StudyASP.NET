@@ -32,12 +32,12 @@
     <Property Name="ArticleType" Type="char" MaxLength="1" />
     <Property Name="Title" Type="nvarchar" MaxLength="200" />
     <Property Name="Contents" Type="ntext" />
-    <Property Name="RegistMemberID" Type="varchar" MaxLength="20" />
     <Property Name="UserName" Type="nvarchar" MaxLength="50" />
     <Property Name="Email" Type="nvarchar" MaxLength="100" />
     <Property Name="IPAddress" Type="nvarchar" MaxLength="20" />
     <Property Name="ViewCnt" Type="int" />
     <Property Name="RegistDate" Type="datetime" />
+    <Property Name="RegistMemberID" Type="varchar" MaxLength="20" />
     <Property Name="RegistUserName" Type="nvarchar" MaxLength="50" />
     <Property Name="ModifyDate" Type="datetime" />
     <Property Name="ModifyUserName" Type="nvarchar" MaxLength="50" />
@@ -52,6 +52,7 @@
     <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="Telephone" Type="varchar" MaxLength="20" />
     <Property Name="EntryDate" Type="datetime" />
+    <Property Name="Levels" Type="char" MaxLength="1" />
   </EntityType>
   <Association Name="FK_ArticleComments_BoardArticles">
     <End Role="BoardArticles" Type="Self.BoardArticles" Multiplicity="1" />
